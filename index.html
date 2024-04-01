@@ -21,20 +21,23 @@
             width: 100%;
         }
 
-        @keyframes animation1 {
-            from {
-                opacity: 0;
-                transform: translate(0, 10px)
-            }
+        .page {
+            height: 100vh;
+        }
 
-            to {
-                opacity: 1;
-                transform: translate(0, 0);
+        @keyframes animation2 {
+            from {
+                transform: rotate3d(1, 1, 1, 360deg);
             }
         }
+
+        .bi-facebook:hover, .bi-instagram:hover, .bi-tiktok:hover {
+            animation: animation2 2s ease-out;
+        }
+
         .animation {
             opacity: 0;
-            transform: translate(0, 30px);
+            transform: translate(0, 50px);
             transition: opacity 1s ease-out, transform 1s ease-out;
         }
     </style>
@@ -60,7 +63,7 @@
                     }
                     else {
                         animatedText.style.opacity = "0";
-                        animatedText.style.transform = "translate(0, 30px)"
+                        animatedText.style.transform = "translate(0, 50px)"
                     }
                 });
             }
@@ -72,11 +75,11 @@
 </head>
 
 <body>
-    <div class="row d-flex text-center justify-content-center align-items-center bg-gradient"
+    <div class="row d-flex text-center justify-content-center align-items-center bg-gradient page"
         style="background-color: pink;">
         <div class="col-md-6">
-            <div class="p-md-5 p-3 ms-md-0 ms-1">
-                <img src="img/IMG_0141.jpeg" class="rounded-5 shadow-lg" alt="">
+            <div class="p-md-5 p-3 ms-md-0 ms-1 animation">
+                <img src="img/IMG_0141.jpeg" class="rounded-3 shadow-lg" alt="">
             </div>
         </div>
         <div class="col-md-6">
@@ -90,7 +93,7 @@
             </div>
         </div>
     </div>
-    <div class="row d-flex text-center justify-content-end align-items-center bg-white bg-gradient">
+    <div class="row d-flex text-center justify-content-end align-items-center bg-white bg-gradient page">
         <div class="col-md-6">
             <div>
                 <h1 class="display-1 animation">
@@ -104,16 +107,16 @@
             </div>
         </div>
         <div class="col-md-6">
-            <div class="p-md-5 p-3 ms-md-0 ms-1">
-                <img src="img/IMG_1002.jpeg" class="rounded-5 shadow-lg" alt="">
+            <div class="p-md-5 p-3 ms-md-0 ms-1 animation">
+                <img src="img/IMG_1002.jpeg" class="rounded-3 shadow-lg" alt="">
             </div>
         </div>
     </div>
-    <div class="row d-flex text-center justify-content-center align-items-center bg-gradient"
+    <div class="row d-flex text-center justify-content-center align-items-center bg-gradient page"
         style="background-color: pink;">
         <div class="col-md-6">
-            <div class="p-md-5 p-3 ms-md-0 ms-1">
-                <img src="img/IMG_0558.jpeg" class="rounded-5 shadow-lg" alt="">
+            <div class="p-md-5 p-3 ms-md-0 ms-1 animation">
+                <img src="img/IMG_0558.jpeg" class="rounded-3 shadow-lg" alt="">
             </div>
         </div>
         <div class="col-md-6">
@@ -130,7 +133,7 @@
             </div>
         </div>
     </div>
-    <div class="row d-flex text-center justify-content-end align-items-center bg-white bg-gradient">
+    <div class="row d-flex text-center justify-content-end align-items-center bg-white bg-gradient page">
         <div class="col-md-6">
             <div class="row">
                 <div class="col-6">
@@ -144,16 +147,16 @@
             </div>
         </div>
         <div class="col-md-6">
-            <div class="p-md-5 p-3 ms-md-0 ms-1">
-                <img src="img/IMG_1233.jpeg" class="rounded-5 shadow-lg" alt="">
+            <div class="p-md-5 p-3 ms-md-0 ms-1 animation">
+                <img src="img/IMG_1233.jpeg" class="rounded-3 shadow-lg" alt="">
             </div>
         </div>
     </div>
-    <div class="row d-flex text-center justify-content-center align-items-center bg-gradient"
+    <div class="row d-flex text-center justify-content-center align-items-center bg-gradient page"
         style="background-color: pink;">
         <div class="col-md-6">
-            <div class="p-md-5 p-3 ms-md-0 ms-1">
-                <img src="img/IMG_9801.jpeg" class="rounded-5 shadow-lg" alt="">
+            <div class="p-md-5 p-3 ms-md-0 ms-1 animation">
+                <img src="img/IMG_9801.jpeg" class="rounded-3 shadow-lg" alt="">
             </div>
         </div>
         <div class="col-md-6">
